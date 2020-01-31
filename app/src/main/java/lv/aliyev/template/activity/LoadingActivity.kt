@@ -96,7 +96,7 @@ open class LoadingActivity : AppCompatActivity() {
         }
     }
 
-    interface Complete <T>{
+    interface Complete <T> {
         fun complete(result: T)
         companion object {
             inline operator fun <T> invoke(crossinline op: (result: T) -> Unit) =

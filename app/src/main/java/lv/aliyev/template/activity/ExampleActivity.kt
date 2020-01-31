@@ -27,6 +27,7 @@ class ExampleActivity: LoadingActivity() {
                 mText.text = it.titlez;
             });
         }
+
     }
 
     private fun setupViewModel() {

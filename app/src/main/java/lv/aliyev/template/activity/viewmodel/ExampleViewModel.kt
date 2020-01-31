@@ -10,7 +10,7 @@ import lv.aliyev.template.activity.repository.ExampleRepository
 class ExampleViewModel : ViewModel() {
     val repository: ExampleRepository = ExampleRepository()
 
-    fun getTodo(id : Int) :LiveData<Example> {
+    fun getTodo(id: Int) : LiveData<Example> {
         return liveData(Dispatchers.IO) {
             val retrivedTodo = repository.getTodo(id)
             Thread.sleep(2000)
@@ -18,7 +18,7 @@ class ExampleViewModel : ViewModel() {
         }
     }
 
-    fun getTodo2(id :Int) :LiveData<Example>{
+    fun getTodo2(id: Int) : LiveData<Example>{
         return liveData(Dispatchers.IO) {
             val retrivedTodo = repository.getTodo(id)
             Thread.sleep(2000)
